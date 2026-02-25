@@ -1,0 +1,142 @@
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+/*Alapvető beállítások, "resetelés"*/
+.container{
+    max-width: 1200px;
+/* külső margó alsó-felső és 
+jobb-bal értéke*/
+    margin:0 auto; /*az auto igazít középre*/
+    padding: 0 15px;
+}
+
+/*Felső sáv stílusa*/
+.header-top-bar{
+    background-color: #3b97d3; /*hexa-kód a színnek*/
+    color: white;
+    /*flex tulajdonság az igazításhoz*/
+    display: flex; 
+    /*A logó feliratot és az ikonokat a két
+    szélére igazítja*/
+    justify-content: space-between;
+    /*Függőlegesen középre igazítjuk 
+    az elemeket:*/
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold; /*pufi betűk*/
+    color: white;
+}
+
+/*navigációs sáv*/
+.main-nav{
+    background-color: #ff9a3c;
+    padding:0 20px;
+}
+
+.main-nav ul{
+    list-style-type: none;
+/*lenullázzuk az alapértelmezett
+ margókat*/
+    padding: 0;
+    margin:0;
+    display: flex; /*Ezt alapvetően örökli, 
+    de mégis be kell állítani, mert a lista 
+    saját beállítása erősebb.
+    Ez állítja egy sorba rendezettre*/
+    gap: 20px; /*helyköz a menűpontok között*/
+}
+
+.main-nav ul li a{
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+    /*background-color: black;*/
+    text-decoration: none; /*hogy ne legyen aláhúzva*/
+    display: block;
+}
+
+footer{
+    background-color: #3b97d3; 
+    /*A fejléc kék színévelmegegyezik*/
+    color:white;
+    /*A szöveg középre igazítása*/
+    text-align: center;
+    /*Egy kis térköz a tartalom fölé és alá:*/
+    padding: 20px 0;
+    /*Helyet hagy a fő tartalom és a lábléc között:*/
+    margin-top: 20px;
+}
+
+.foresz{
+    display:grid;
+    grid-template-columns: 2fr 1fr; /*A bal oldal kétszer szélesebb, mint a jobb*/
+    gap: 20px; /*Helyköz a blokkkok között*/
+    background-color: rgb(255, 255, 255);
+}
+
+.bal_oldal{
+    background-color: #f7cac9;
+    padding:40px;
+    text-align: justify;  /*sorkizártan igazít*/
+
+}
+
+.jobb_oldal{
+    background-color: #a7edf7;
+    display: flex;
+    flex-direction: column; /*Egymás alá rendezi a diveket*/
+    gap: 20px;
+    text-align:center;
+
+}
+
+.welcome{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+    background-color: #ffffff;
+    margin-top:40px;
+}
+
+.welcome-box .welcome-about{
+    background-color: #8cd0fe;
+    flex:1; /*Egyenlő arányban osztja szét a rendelkezésre álló helyet*/
+}
+
+.content-box{
+    background-color: #d3eafc;
+    padding: 10px;
+    flex:1;
+}
+
+.termekek{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 db ugyan akkora oszlopot hoz létre*/
+    gap: 20px; /*oszlopok közti hely*/
+}
+
+.termek_db{
+    border: 1px solid #eee;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.termek-kep-tarto{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 150px;
+    background-color: #c5c5c5;
+
+}
+
+.termek-felirat{
+    font-weight: bold;
+    color: #ff9a3c
+}
